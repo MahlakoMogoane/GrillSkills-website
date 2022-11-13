@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.welcome{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgb(255, 176, 92), rgb(104, 54, 1));
+    animation-name: trans();
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buttons{
+    padding-top: 55px;
+}
+
+#login{
+    margin-right: 125px;
+}
+
+#login, #signup{
+    height: 40px;
+    width: 150px;
+    border: 0;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: brown;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+@keyframes trans{
+    from{
+        background: linear-gradient(rgb(255, 176, 92), rgb(104, 54, 1));
+    }
+    to{
+        background: linear-gradient( rgb(104, 54, 1), rgb(255, 176, 92),;
+    }
+}
+
