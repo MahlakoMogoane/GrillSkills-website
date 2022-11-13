@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 
 .welcome{
@@ -10,8 +9,9 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(rgb(255, 176, 92), rgb(104, 54, 1));
-    animation-name: trans();
+    background: linear-gradient(-45deg, rgb(255, 176, 92), rgb(104, 54, 1));
+
+    animation-name: trans;
     animation-duration: 5s;
     animation-timing-function: ease;
     animation-delay: 0;
@@ -47,12 +47,15 @@ a{
     font-size: 20px;
 }
 
-@keyframes trans{
-    from{
-        background: linear-gradient(rgb(255, 176, 92), rgb(104, 54, 1));
+@keyframes trans {
+    0%{
+        background-position: 0% 50%;
     }
-    to{
-        background: linear-gradient( rgb(104, 54, 1), rgb(255, 176, 92),;
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%
     }
 }
 
