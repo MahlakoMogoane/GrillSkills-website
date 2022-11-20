@@ -1,0 +1,42 @@
+body{
+    height: 90vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 25vh;
+}
+
+div{
+    background: linear-gradient(-45deg, rgb(255, 176, 92), rgb(104, 54, 1));
+    width: 159px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1023px) {
+    /*code for devices smaller than a laptop*/
+    div{
+        margin-bottom: 20px;
+        width: 50%;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+}

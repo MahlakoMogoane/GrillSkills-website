@@ -32,7 +32,7 @@ h1{
     margin-right: 125px;
 }
 
-#login, #signup{
+button{
     height: 40px;
     width: 150px;
     border: 0;
@@ -56,6 +56,25 @@ a{
     }
     100%{
         background-position: 0% 50%
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    button{
+        width: 90px;
+    }
+
+    #login{
+        margin: 25px;
     }
 }
 
